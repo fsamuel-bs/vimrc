@@ -65,6 +65,7 @@ Bundle 'jiangmiao/auto-pairs'
 " Statusline utilities
 Bundle 'Lokaltog/vim-powerline'
 set laststatus=2
+let g:Powerline_symbols = 'unicode'
 
 " Themes
 Bundle 'mrtazz/molokai.vim'
