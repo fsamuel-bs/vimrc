@@ -62,6 +62,10 @@ Bundle 'vim-ruby/vim-ruby'
 " Close delimiters
 Bundle 'jiangmiao/auto-pairs'
 
+" Statusline utilities
+Bundle 'Lokaltog/vim-powerline'
+set laststatus=2
+
 " Themes
 Bundle 'mrtazz/molokai.vim'
 
