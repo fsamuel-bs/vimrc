@@ -185,3 +185,6 @@ set directory=~/.vim_bkp//
 " Highlighting lines longer than 80 columns
 highlight OverLength ctermbg=darkred ctermfg=white guibg=#592929
 match OverLength /\%>80v.\+/
+
+" Quake3 =D
+map <leader>q3 :!quake3<cr>
