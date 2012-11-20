@@ -60,7 +60,7 @@ Bundle "garbas/vim-snipmate"
 Bundle 'vim-ruby/vim-ruby'
 
 " Close delimiters
-Bundle 'jiangmiao/auto-pairs'
+Bundle 'Raimondi/delimitMate'
 
 " Statusline utilities
 Bundle 'Lokaltog/vim-powerline'
