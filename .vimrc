@@ -172,7 +172,7 @@ endfunc
 au BufWrite * :call DeleteTrailingWS()
 
 " Automatic folding
-au BufReadPre * setlocal foldmethod=indent
+au BufReadPre * setlocal foldmethod=syntax
 
 au BufNewFile,BufRead *.gradle setf groovy
 au BufNewFile,BufRead *.json setf javascript
