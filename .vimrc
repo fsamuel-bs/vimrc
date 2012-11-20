@@ -131,7 +131,7 @@ nnoremap <leader>lr <esc>:let @/ = ""<cr>:<esc>
 
 " Java specifics
 " Eclim
-au FileType java map <leader>mi :JavaImportMissing<cr>:JavaImportClean<cr>:JavaImportSort<cr>
+au FileType java map <leader>mi :JavaImportOrganize<cr>
 au FileType java map <leader>co :JavaCorrect<cr>
 au FileType java map <leader>fo :JavaFormat<cr>
 au FileType java map <leader>get :JavaGet<cr>
