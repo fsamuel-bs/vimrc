@@ -134,8 +134,8 @@ nnoremap <leader>lr <esc>:let @/ = ""<cr>:<esc>
 au FileType java map <leader>mi :JavaImportOrganize<cr>
 au FileType java map <leader>co :JavaCorrect<cr>
 au FileType java map <leader>fo :JavaFormat<cr>
-au FileType java map <leader>get :JavaGet<cr>
-au FileType java map <leader>set :JavaSet<cr>
+au FileType java map <leader>gs :JavaGetSet<cr>
+au FileType java map <leader>se :JavaSearch<cr>
 
 set tabstop=4 shiftwidth=4 softtabstop=4 backspace=indent,eol,start expandtab
 
