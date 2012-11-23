@@ -46,6 +46,9 @@ let g:ctrlp_custom_ignore = {
 \ 'dir':  '\v[\/](\.git|\.hg|\.svn|build|bin)$',
 \ 'file': '\.class$\|\.so$\|\.db$\|\.swp$',
 \ }
+let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files']
+Bundle 'jasoncodes/ctrlp-modified.vim'
+map <C-m> :CtrlPModified<CR>
 
 Bundle 'majutsushi/tagbar'
 set updatetime=500
@@ -139,8 +142,8 @@ au FileType java map <leader>se :JavaSearch<cr>
 
 set tabstop=4 shiftwidth=4 softtabstop=4 backspace=indent,eol,start expandtab
 
-" Scala indent with 3 spaces
-au FileType scala set tabstop=3 shiftwidth=3 softtabstop=3
+" Scala indent with 2 spaces
+au FileType scala set tabstop=2 shiftwidth=2 softtabstop=2
 
 if has("gui_running")
     " set guioptions-=T " turn off toolbar
