@@ -46,7 +46,15 @@ let g:ctrlp_custom_ignore = {
 \ 'dir':  '\v[\/](\.git|\.hg|\.svn|build|bin)$',
 \ 'file': '\.class$\|\.so$\|\.db$\|\.swp$',
 \ }
-let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files']
+" When in a git repository, only lists tracked files
+let g:ctrlp_user_command = {
+    \ 'types': {
+        \ 1: ['.git', 'cd %s && git ls-files'],
+        \ },
+    \ 'fallback': 'find %s -type f'
+    \ }
+
+" Creates a CtrlP tab for git modified files
 Bundle 'jasoncodes/ctrlp-modified.vim'
 map <C-m> :CtrlPModified<CR>
 
