@@ -7,7 +7,7 @@ Bundle 'gmarik/vundle'
 
 Bundle 'tpope/vim-fugitive'
 nmap <leader>gst :Gstatus<CR>
-nmap <leader>gdi :Gdiff<CR>
+nmap <leader>gdi :Gdiff
 nmap <leader>ta :diffget //2<CR>
 nmap <leader>me :diffget //3<CR>
 nmap <leader>gci :Gcommit<CR>
@@ -56,7 +56,7 @@ let g:ctrlp_user_command = {
 
 " Creates a CtrlP tab for git modified files
 Bundle 'jasoncodes/ctrlp-modified.vim'
-map <C-m> :CtrlPModified<CR>
+map <Leader>m :CtrlPModified<CR>
 
 Bundle 'majutsushi/tagbar'
 set updatetime=500
@@ -111,6 +111,7 @@ map <C-l> <C-W>l
 " tab openning and closing
 map <leader>tc :tabclose<CR>
 map <leader>tn :tabnew<CR>
+map <leader>to :tabonly<CR>
 
 " tab navigation
 if has("gui_running")
@@ -185,6 +186,7 @@ au BufWrite * :call DeleteTrailingWS()
 " Automatic folding
 set foldmethod=syntax
 set nofoldenable
+nmap za <SPACE>
 
 au BufNewFile,BufRead *.gradle setf groovy
 au BufNewFile,BufRead *.json setf javascript
@@ -202,6 +204,3 @@ set directory=~/.vim_bkp//
 " Highlighting lines longer than 80 columns
 highlight OverLength ctermbg=darkred ctermfg=white guibg=#592929
 match OverLength /\%>80v.\+/
-
-" Quake3 =D
-map <leader>q3 :!quake3<cr>
