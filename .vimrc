@@ -78,6 +78,10 @@ Bundle 'Lokaltog/vim-powerline'
 set laststatus=2
 let g:Powerline_symbols = 'unicode'
 
+Bundle 'rosstimson/scala-vim-support'
+au BufRead,BufNewFile *.scala set filetype=scala
+au BufRead,BufNewFile *.sbt set filetype=scala
+
 " Themes
 Bundle 'mrtazz/molokai.vim'
 
