@@ -162,6 +162,7 @@ au FileType java map <leader>co :JavaCorrect<cr>
 au FileType java map <leader>fo :JavaFormat<cr>
 au FileType java map <leader>gs :JavaGetSet<cr>
 au FileType java map <leader>se :JavaSearch<cr>
+au FileType java map <leader>jd :JavaDocComment<cr>
 
 set tabstop=4 shiftwidth=4 softtabstop=4 backspace=indent,eol,start expandtab
 
