@@ -3,6 +3,12 @@ set nocompatible
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
+Bundle 'vim-scripts/tlib'
+Bundle 'MarcWeber/vim-addon-mw-utils'
+Bundle 'MarcWeber/vim-addon-actions'
+Bundle 'MarcWeber/vim-addon-sbt'
+
+
 Bundle 'gmarik/vundle'
 
 Bundle 'tpope/vim-fugitive'
