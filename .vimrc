@@ -203,7 +203,7 @@ au BufWrite * :call DeleteTrailingWS()
 " Automatic folding
 set foldmethod=syntax
 set nofoldenable
-nmap za <SPACE>
+nmap <SPACE> za
 
 au BufNewFile,BufRead *.gradle setf groovy
 au BufNewFile,BufRead *.json setf javascript
