@@ -112,6 +112,10 @@ map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
 
+" window split change
+nmap <leader>h <C-W>t <C-W>K
+nmap <leader>v <C-W>t <C-W>H
+
 " tab openning and closing
 map <leader>tc :tabclose<CR>
 map <leader>tn :tabnew<CR>
