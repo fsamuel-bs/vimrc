@@ -170,6 +170,8 @@ set tabstop=4 shiftwidth=4 softtabstop=4 backspace=indent,eol,start expandtab
 au FileType scala set tabstop=2 shiftwidth=2 softtabstop=2
 " Ruby indent with 2 spaces
 au FileType ruby set tabstop=2 shiftwidth=2 softtabstop=2
+" YAML indent with 2 spaces
+au FileType yaml set tabstop=2 shiftwidth=2 softtabstop=2
 
 if has("gui_running")
     " set guioptions-=T " turn off toolbar
