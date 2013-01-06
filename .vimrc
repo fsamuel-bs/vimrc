@@ -88,6 +88,11 @@ Bundle 'rosstimson/scala-vim-support'
 au BufRead,BufNewFile *.scala set filetype=scala
 au BufRead,BufNewFile *.sbt set filetype=scala
 
+" Handle VIM versionning easily
+Bundle 'sjl/gundo.vim'
+nnoremap <F5> :GundoToggle<CR>
+let g:gundo_close_on_revert = 1
+
 " Themes
 Bundle 'mrtazz/molokai.vim'
 
