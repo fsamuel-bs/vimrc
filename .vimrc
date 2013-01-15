@@ -232,6 +232,3 @@ set directory=~/.vim_bkp//
 " Highlighting lines longer than 80 columns
 highlight OverLength ctermbg=darkred ctermfg=white guibg=#592929
 match OverLength /\%>80v.\+/
-
-imap <leader>\ <ESC>
-vmap <leader>\ <ESC>
