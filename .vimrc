@@ -19,6 +19,7 @@ nnoremap <leader>me :diffget //3<CR>
 nnoremap <leader>gci :Gcommit<CR>
 nnoremap <leader>gr :Gread<CR>
 nnoremap <leader>gw :Gwrite<CR>
+nnoremap <leader>gb :Gblame<CR>
 
 Bundle 'tpope/vim-unimpaired'
 
