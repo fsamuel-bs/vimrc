@@ -223,7 +223,7 @@ au BufNewFile,BufRead *.md setfiletype markdown
 " Resource .vimrc
 nnoremap <leader>so :source ~/.vimrc<cr>
 " Edit .vimrc
-nnoremap <leader>rc :tabnew ~/.vimrc<cr>
+nnoremap <leader>rc :tabnew ~/vimrc/.vimrc<cr>
 
 " Backup directory
 set backupdir=~/.vim_bkp//
