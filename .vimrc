@@ -115,9 +115,9 @@ filetype plugin indent on
 " keep pasted content in buffer
 xnoremap p pgvy
 
-" if a line is splitted between two lines, 'j' and 'k' move through its parts
-nnoremap j gj
-nnoremap k gk
+" if a line wraps, 'j' and 'k' move through each visual line
+noremap j gj
+noremap k gk
 
 " window movement
 map <C-j> <C-W>j
