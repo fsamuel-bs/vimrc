@@ -12,15 +12,13 @@ Bundle 'MarcWeber/vim-addon-sbt'
 Bundle 'gmarik/vundle'
 
 Bundle 'tpope/vim-fugitive'
-nmap <leader>gst :Gstatus<CR>
-nmap <leader>gdi :Gdiff
-nmap <leader>ta :diffget //2<CR>
-nmap <leader>me :diffget //3<CR>
-nmap <leader>gci :Gcommit<CR>
-nmap <leader>gco :Gread<CR>
-nmap <leader>gad :Gwrite<CR>
-nmap <leader>gup :Git push<CR>
-nmap <leader>gdo :Git pull<CR>
+nnoremap <leader>gst :Gstatus<CR>
+nnoremap <leader>gdi :Gdiff
+nnoremap <leader>ta :diffget //2<CR>
+nnoremap <leader>me :diffget //3<CR>
+nnoremap <leader>gci :Gcommit<CR>
+nnoremap <leader>gr :Gread<CR>
+nnoremap <leader>gw :Gwrite<CR>
 
 Bundle 'tpope/vim-unimpaired'
 
