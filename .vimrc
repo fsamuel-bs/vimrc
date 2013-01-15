@@ -76,6 +76,10 @@ Bundle "garbas/vim-snipmate"
 
 Bundle 'vim-ruby/vim-ruby'
 
+Bundle 'skwp/vim-rspec'
+nnoremap <leader>rs :RunSpec<CR>
+nnoremap <leader>rl :RunSpecLine<CR>
+
 " Close delimiters
 Bundle 'Raimondi/delimitMate'
 
