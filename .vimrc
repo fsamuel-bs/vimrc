@@ -10,6 +10,8 @@ Bundle 'MarcWeber/vim-addon-sbt'
 
 
 Bundle 'gmarik/vundle'
+nnoremap <leader>bi :BundleInstall<CR>
+nnoremap <leader>bu :BundleInstall!<CR>
 
 Bundle 'tpope/vim-fugitive'
 nnoremap <leader>gst :Gstatus<CR>
