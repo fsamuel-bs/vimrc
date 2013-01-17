@@ -101,6 +101,10 @@ let g:gundo_close_on_revert = 1
 
 Bundle 'xolox/vim-session'
 
+Bundle 'scrooloose/syntastic'
+
+Bundle 'rodjek/vim-puppet'
+
 " Themes
 Bundle 'mrtazz/molokai.vim'
 
