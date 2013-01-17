@@ -3,12 +3,6 @@ set nocompatible
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
-Bundle 'vim-scripts/tlib'
-Bundle 'MarcWeber/vim-addon-mw-utils'
-Bundle 'MarcWeber/vim-addon-actions'
-Bundle 'MarcWeber/vim-addon-sbt'
-
-
 Bundle 'gmarik/vundle'
 nnoremap <leader>bi :BundleInstall<CR>
 nnoremap <leader>bu :BundleInstall!<CR>
@@ -89,9 +83,16 @@ Bundle 'Lokaltog/vim-powerline'
 set laststatus=2
 let g:Powerline_symbols = 'unicode'
 
+" Scala/SBT support with dependencies
 Bundle 'rosstimson/scala-vim-support'
+Bundle 'vim-scripts/tlib'
+Bundle 'MarcWeber/vim-addon-mw-utils'
+Bundle 'MarcWeber/vim-addon-actions'
+Bundle 'MarcWeber/vim-addon-sbt'
+
 au BufRead,BufNewFile *.scala set filetype=scala
 au BufRead,BufNewFile *.sbt set filetype=scala
+
 
 " Handle VIM versionning easily
 Bundle 'sjl/gundo.vim'
