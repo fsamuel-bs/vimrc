@@ -105,6 +105,9 @@ Bundle 'scrooloose/syntastic'
 
 Bundle 'rodjek/vim-puppet'
 
+Bundle 'vim-scripts/matchit.zip'
+Bundle 'vim-scripts/ruby-matchit'
+
 " Themes
 Bundle 'mrtazz/molokai.vim'
 
