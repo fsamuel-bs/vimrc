@@ -102,6 +102,9 @@ let g:gundo_close_on_revert = 1
 Bundle 'xolox/vim-session'
 
 Bundle 'scrooloose/syntastic'
+let g:syntastic_mode_map = { 'mode': 'passive',
+      \ 'active_filetypes': ['ruby', 'puppet', 'yaml', 'scala'],
+      \ 'passive_filetypes': [] }
 
 Bundle 'rodjek/vim-puppet'
 
@@ -230,6 +233,7 @@ nmap <SPACE> za
 au BufNewFile,BufRead *.gradle setf groovy
 au BufNewFile,BufRead *.json setf javascript
 au BufNewFile,BufRead *.md setfiletype markdown
+au BufNewFile,BufRead *.pp setfiletype puppet
 
 " Resource .vimrc
 nnoremap <leader>so :source ~/.vimrc<cr>
