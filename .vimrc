@@ -17,6 +17,8 @@ nnoremap <leader>gr :Gread<CR>
 nnoremap <leader>gw :Gwrite<CR>
 nnoremap <leader>gb :Gblame<CR>
 
+autocmd BufReadPost fugitive://* set bufhidden=delete
+
 Bundle 'tpope/vim-unimpaired'
 
 Bundle 'tpope/vim-surround'
