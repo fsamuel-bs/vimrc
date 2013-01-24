@@ -9,14 +9,17 @@ nnoremap <leader>bu :BundleInstall!<CR>
 
 Bundle 'tpope/vim-fugitive'
 nnoremap <leader>gst :Gstatus<CR>
-nnoremap <leader>gdi :Gdiff
-nnoremap <leader>ta :diffget //2<CR>
-nnoremap <leader>me :diffget //3<CR>
-nnoremap <leader>gci :Gcommit<CR>
+nnoremap <leader>gb :Gblame<CR>
+nnoremap <leader>gc :Gcommit<CR>
+nnoremap <leader>gd :Gdiff
+nnoremap <leader>gg :Ggrep
+nnoremap <leader>gh :Gbrowse<CR>
+nnoremap <leader>gl :Glog
 nnoremap <leader>gr :Gread<CR>
 nnoremap <leader>gw :Gwrite<CR>
-nnoremap <leader>gb :Gblame<CR>
-nnoremap <leader>gh :Gbrowse<CR>
+" 3-way merge
+nnoremap <leader>he :diffget //2<CR>
+nnoremap <leader>hd :diffget //3<CR>
 
 autocmd BufReadPost fugitive://* set bufhidden=delete
 
@@ -72,6 +75,10 @@ Bundle "tomtom/tlib_vim"
 Bundle "honza/snipmate-snippets"
 Bundle "garbas/vim-snipmate"
 
+"QuickFixClear
+nnoremap <leader>qc :copen<CR>:QuickFixClear<CR>:q<CR>
+nnoremap <leader>ql :lopen<CR>:QuickFixClear<CR>:q<CR>
+
 Bundle 'vim-ruby/vim-ruby'
 
 Bundle 'skwp/vim-rspec'
@@ -106,7 +113,7 @@ Bundle 'xolox/vim-session'
 
 Bundle 'scrooloose/syntastic'
 let g:syntastic_mode_map = { 'mode': 'passive',
-      \ 'active_filetypes': ['ruby', 'puppet', 'yaml', 'scala'],
+      \ 'active_filetypes': ['ruby', 'puppet', 'yaml'],
       \ 'passive_filetypes': [] }
 
 Bundle 'rodjek/vim-puppet'
