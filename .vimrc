@@ -23,6 +23,9 @@ nnoremap <leader>hd :diffget //3<CR>
 
 autocmd BufReadPost fugitive://* set bufhidden=delete
 
+Bundle 'gregsexton/gitv'
+nnoremap <leader>gv :Gitv<CR>
+
 Bundle 'tpope/vim-unimpaired'
 
 Bundle 'tpope/vim-surround'
