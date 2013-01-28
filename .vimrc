@@ -56,7 +56,7 @@ let g:ctrlp_custom_ignore = {
 \ 'dir':  '\v[\/](\.git|\.hg|\.svn|build|bin)$',
 \ 'file': '\.class$\|\.so$\|\.db$\|\.swp$',
 \ }
-" When in a git repository, only lists tracked files
+" When in a git repository, lists all files that are not ignored
 let g:ctrlp_user_command = {
     \ 'types': {
         \ 1: ['.git', 'cd %s && git ls-files && git ls-files --others --exclude-standard'],
@@ -268,3 +268,4 @@ set directory=~/.vim_bkp//
 " Highlighting lines longer than 80 columns
 highlight OverLength ctermbg=darkred ctermfg=white guibg=#592929
 match OverLength /\%>80v.\+/
+set scrolloff=10
